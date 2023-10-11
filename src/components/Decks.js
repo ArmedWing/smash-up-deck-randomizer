@@ -39,6 +39,7 @@ function AllDecks() {
                     style={{ maxWidth: "400px", maxHeight: "400px" }}
                     alt={randomDeck.name}
                 />
+                
             </>
             ) : (<>
             <p>No more decks in the pool.</p>
@@ -48,6 +49,7 @@ function AllDecks() {
             )}
         </div>
         <button onClick={getRandomDeck}>Random Deck</button>
+        <ResetDeckList resetDeckList={resetDeckList}/>
         </div>
     );
 }

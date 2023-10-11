@@ -2,35 +2,35 @@
     "decks": [
         {
             "name": "Pirates",
-            "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/446540/9641620f17d047635035a229dac1346a2c99e1a7.jpg"
+            "img": "https://i.imgur.com/IyiSSUj.png"
         },
         {
             "name": "Aliens",
-            "img": "https://i.stack.imgur.com/zgXxW.jpg"
+            "img": "https://i.imgur.com/Yc8ml4Q.png"
         },
         {
             "name": "Dinosaurs",
-            "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/446540/09ef5aff3bcc4be761180736c82f49e2b889d1a5.jpg"
+            "img": "https://i.imgur.com/2sY7t82.png"
         },
         {
             "name": "Wizards",
-            "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/446540/8d4335b53b1c1825b15cb7562f1f6ed6b797969d.jpg"
+            "img": "https://i.imgur.com/vUTKNDD.png"
         },
         {
             "name": "Zombies",
-            "img": "https://i.pinimg.com/1200x/aa/5c/b4/aa5cb4988c2acc8ddcf1beb2491c84a9.jpg"
+            "img": "https://i.imgur.com/yvTyeup.png"
         },
         {
             "name": "Bear Cavalry",
-            "img": "https://shorturl.at/bik49"
+            "img": "https://i.imgur.com/hFtTHs5.png"
         },
         {
             "name": "Ghosts",
-            "img": "https://shorturl.at/hwFR6"
+            "img": "https://i.imgur.com/ZXV3qsQ.png"
         },
         {
             "name": "Killer Plants",
-            "img": "https://static.gamesmen.com.au/media/catalog/product/cache/43c1b9e48526c06c9c8010675100b71d/s/m/smash_up_awesome_level_9000_expansion_card_game_5_.jpg"
+            "img": "https://i.imgur.com/0yxzRqw.png"
         },
         {
             "name": "Elder Things",
@@ -38,11 +38,11 @@
         },
         {
             "name": "Shapeshifters",
-            "img": "https://www.bazaargames.nl/images/products/480x427/9089013_6.jpg"
+            "img": "https://i.imgur.com/IgiUl5J.png"
         },
         {
             "name": "Giant Ants",
-            "img": "https://i.imgur.com/kKN5Ren.jpeg"
+            "img": "https://i.imgur.com/zlZZTLU.png"
         },
         {
             "name": "Elves",
@@ -110,11 +110,11 @@
         },
         {
             "name": "Itty Critters",
-            "img": "https://cdn1.philibertnet.com/379271-thickbox_default/smash-up-anglais-big-in-japan.jpg"
+            "img": "https://i.imgur.com/n7IJDrR.png"
         },
         {
             "name": "Kaiju",
-            "img": "https://vignette3.wikia.nocookie.net/smashup/images/4/49/Screen-shot-2017-06-14-at-10.24.11-am.png/revision/latest?cb=20170619211859"
+            "img": "https://i.imgur.com/z8TWSPE.png"
         },
         {
             "name": "Magical Girls",
@@ -167,8 +167,114 @@
         {
             "name": "Wreck-It Ralph",
             "img": "https://i.imgur.com/KGvOtwe.png"
+        },
+        {
+            "name": "Steampunks",
+            "img": "https://i.imgur.com/nibhCML.png"
+        },
+        {
+            "name": "Miskatonic University",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Miskatonic-University_01.jpg"
+        },
+        {
+            "name": "Cyborg Apes",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Cyber-apes_01.jpg"
+        },
+        {
+            "name": "Super Spies",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Super-spies_01.jpg"
+        },
+        {
+            "name": "Time Travelers",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Time-trvellers_01.jpg"
+        },
+        {
+            "name": "Mad Scientists",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Mad-scientists_01.jpg"
+        },
+        {
+            "name": "Vampires",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Vampires_01.jpg"
+        },
+        {
+            "name": "Werewolves",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Werewolves_01.jpg"
+        },
+        {
+            "name": "Fairies",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Fairies_01.jpg"
+        },
+        {
+            "name": "Kitty Cats",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Kitty-cats_01.jpg"
+        },
+        {
+            "name": "Mythic Horses",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Mythic-Horses.jpg"
+        },
+        {
+            "name": "Dragons",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Dragons_01.jpg"
+        },
+        {
+            "name": "Sharks",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Sharks_01.jpg"
+        },
+        {
+            "name": "Tornados",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Tornados_01.png"
+        },
+        {
+            "name": "Ignobles",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Ignobles_01.jpg"
+        },
+        {
+            "name": "Explorers",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Explorers_01.jpg"
+        },
+        {
+            "name": "Grannies",
+            "img": "https://tabletopwanderers.com/wp-content/uploads/2021/03/Grannies_01.jpg"
+        },
+        {
+            "name": "Dwarves",
+            "img": "https://i.imgur.com/9s4ZLbm.png"
+        },
+        {
+            "name": "Clerics",
+            "img": "https://i.imgur.com/qya9GNy.png"
+        },
+        {
+            "name": "Ultimates",
+            "img": "https://i.imgur.com/Td2x9zZ.png"
+        },
+        {
+            "name": "Spider-Verse",
+            "img": "https://i.imgur.com/qYD4DLD.png"
+        },
+        {
+            "name": "SHIELD",
+            "img": "https://i.imgur.com/CHHvFYZ.png"
+        },
+        {
+            "name": "Masters of Evil",
+            "img": "https://i.imgur.com/IEmMqwB.png"
+        },
+        {
+            "name": "Kree",
+            "img": "https://i.imgur.com/cjeM3gn.png"
+        },
+        {
+            "name": "Warriors",
+            "img": "https://i.imgur.com/6cw24yY.png"
+        },
+        {
+            "name": "Ninjas",
+            "img": "https://i.imgur.com/MLc3MdF.png"
+        },
+        {
+            "name": "Tricksters",
+            "img": "https://i.imgur.com/ldKJAGP.png"
         }
-
-
     ]
 }
