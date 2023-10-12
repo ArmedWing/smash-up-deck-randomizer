@@ -1,6 +1,6 @@
 import { db } from "../config/firebase"
 import React from "react"
-import { addDoc, collection, doc, getDocs, updateDoc, FieldValue, setDoc, getDoc} from "firebase/firestore"
+import { addDoc, collection, doc, getDocs, updateDoc, getDoc} from "firebase/firestore"
 
 
 function Players() {
@@ -9,8 +9,18 @@ function Players() {
         p.preventDefault();
     
         const playerName = p.target.player.value;
-        const winningDeck = p.target.deck.value;
+        const winningDeck = p.target.decks.value;
         const win = p.target.win.value;
+
+        const [deck1Val, deck2Val] = winningDeck.split(' ')
+
+        const deck1 = deck1Val
+        const deck2 = deck2Val
+
+        const decks = {};
+        decks[deck1] = 0;
+        decks[deck2] = 0;
+
     
         const playersRef = collection(db, "players");
         const querySnapshot = await getDocs(playersRef);
@@ -32,12 +42,22 @@ function Players() {
             const playerDocRef = doc(db, "players", playerId);
             const playerInfo = await getDoc(playerDocRef)            
             updateDoc(playerDocRef, {win: Number(playerInfo.data().win) + Number(win)})
+
             
+            const playerDocSnapshot = await getDoc(playerDocRef);
+            const currentDecks = playerDocSnapshot.data().decks || {}; 
+
+            
+            currentDecks[deck1] = (currentDecks[deck1] || 0) + 1;
+            currentDecks[deck2] = (currentDecks[deck2] || 0) + 1;
+
+            
+            await updateDoc(playerDocRef, { decks: currentDecks });
 
         } else {
             
-            const newPlayerRef = await addDoc(playersRef, { player: playerName, deck: winningDeck, win: Number(win) });
-
+            const newPlayerRef = await addDoc(playersRef, { player: playerName, decks: decks, win: Number(win) });
+            
         }
     
         alert("Win added...");
@@ -50,18 +70,13 @@ function Players() {
                 <input name='player' id='playerName'></input>
                 <label for="playerName">Player Name</label><br></br>
 
-                <input name='deck' id='deck'></input>
-                <label for="deck">Winning Deck</label><br></br>                
+                <input name='decks' id='decks'></input>
+                <label for="decks">Winning Deck</label><br></br>                
 
                 <input name='win' id='win'  type="number"></input>
                 <label for="win">Add win</label><br></br>                
                 <button>Add win</button>
             </form>
-
-            
-            
-            <p>Players:</p>
-            <p></p>
         </div>
     )
 }
