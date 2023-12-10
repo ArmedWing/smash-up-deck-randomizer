@@ -275,6 +275,22 @@
         {
             "name": "Tricksters",
             "img": "https://i.imgur.com/ldKJAGP.png"
+        },
+        {
+            "name": "Mermaids",
+            "img": "https://imgur.com/UZmGEL1"
+        },
+        {
+            "name": "Sheeps",
+            "img": "https://imgur.com/Ce5tGgS"
+        },
+        {
+            "name": "Skeletons",
+            "img": "https://imgur.com/lU6i9VO"
+        },
+        {
+            "name": "World Champs",
+            "img": "https://imgur.com/RZ7TmmF"
         }
     ]
 }
