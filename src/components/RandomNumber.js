@@ -18,9 +18,9 @@ function RandomNumber () {
 
     return (
         <div>
-            <p>Number: {buttonClicked ? ranNum : 0}</p>
-            <button onClick={randomNum}>Roll...</button>
-            <button onClick={resetNum}>Reset number</button>
+            <p className="randomNumber">Number: {buttonClicked ? ranNum : 0}</p>
+            <button className="rollButton" onClick={randomNum}>Roll...</button>
+            <button className="resetNumButton" onClick={resetNum}>Reset number</button>
         </div>
     )
 }

@@ -1,40 +1,9 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-image: url("../background/BiggerGeekierRulebook.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1px;
 }
 
 #root > div > div:nth-child(4) > div > div {
@@ -44,4 +13,101 @@
 
 .player-info {
   padding-left: 100px;
+}
+
+.deckName {
+  font-size: 22px;
+  background-color: white;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 3px solid;
+}
+
+.deckContainer {
+  border: 3px solid;
+}
+
+.randomButton {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid;
+}
+
+.resetButton {
+  padding: 10px;
+  border: 2px solid;
+}
+
+.randomNumber {
+  font-size: 20px;
+  border: 2px solid;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.rollButton {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-right: 5px;
+  border: 2px solid;
+}
+
+.resetNumButton {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-left: 5px;
+  border: 2px solid;
+}
+
+.playerNameLabel {
+  background-color: white;
+  padding: 0 2px 0 2px;
+  border: 1px solid;
+}
+
+.winningDeckLabel {
+  background-color: white;
+  padding: 0 2px 0 2px;
+  border: 1px solid;
+}
+
+.addWinLabel {
+  background-color: white;
+  padding: 0 2px 0 2px;
+  border: 1px solid;
+}
+
+.addWinButton {
+  padding: 5px;
+  border: 2px solid;
+}
+
+.fieldWrapper {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+#playerName {
+  margin-bottom: 5px;
+  border: 1px solid;
+}
+
+#decks {
+  margin-bottom: 5px;
+  border: 1px solid;
+}
+
+#number {
+  margin-bottom: 5px;
+  border: 1px solid;
 }
