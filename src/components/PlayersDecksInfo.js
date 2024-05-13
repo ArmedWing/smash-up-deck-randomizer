@@ -5,7 +5,7 @@ import { Context } from "../App";
 // import { SDK_VERSION } from "firebase/app";
 
 function PlayersDecksInfo() {
-  const [players, setPlayers] = useContext(Context)
+  const [players, setPlayers] = useContext(Context);
   const [showPlayerInfo, setShowPlayerInfo] = useState(false);
 
   const playerInfo = async () => {
@@ -29,7 +29,7 @@ function PlayersDecksInfo() {
 
   return (
     <div>
-      <h3>Players:</h3>
+      <h3 className="players-h3">Players:</h3>
       <button onClick={playerInfo}>Load Player Info</button>
 
       <div className="playerInfo">
@@ -38,6 +38,7 @@ function PlayersDecksInfo() {
             {players.map((player, index) => (
               <div key={index} className="player-info">
                 <h4 className="player-name">Player: {player.player}</h4>
+                <h2 className="wins-count">Total wins: {player.win}</h2>
 
                 <div className="deck-info">
                   Decks:

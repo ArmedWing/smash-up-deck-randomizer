@@ -122,3 +122,16 @@
   background-color: white;
   border: 1px solid;
 }
+
+.wins-count {
+  background-color: white;
+  border: 1px solid;
+}
+
+.players-h3 {
+  background-color: white;
+  border: 1px solid;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
