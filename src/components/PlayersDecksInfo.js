@@ -1,10 +1,11 @@
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../config/firebase";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { Context } from "../App";
 // import { SDK_VERSION } from "firebase/app";
 
 function PlayersDecksInfo() {
-  const [players, setPlayers] = useState([]);
+  const [players, setPlayers] = useContext(Context)
   const [showPlayerInfo, setShowPlayerInfo] = useState(false);
 
   const playerInfo = async () => {

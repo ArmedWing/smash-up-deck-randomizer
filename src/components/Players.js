@@ -1,5 +1,6 @@
 import { db } from "../config/firebase";
-import { React } from "react";
+import { React, useContext } from "react";
+import { Context } from "../App";
 import {
   addDoc,
   collection,
@@ -10,6 +11,8 @@ import {
 } from "firebase/firestore";
 
 function Players() {
+  const [players, setPlayers] = useContext(Context);
+
   const addWin = async (p) => {
     p.preventDefault();
 
@@ -36,29 +39,42 @@ function Players() {
 
     if (playerExists) {
       const playerDocRef = doc(db, "players", playerId);
-      const playerInfo = await getDoc(playerDocRef);
+      let playerInfo = await getDoc(playerDocRef);
+      playerInfo = playerInfo.data();
+      playerInfo.win = Number(playerInfo.win) + Number(win);
+      playerInfo.decks[winningDeck] =
+        (playerInfo.decks[winningDeck] || 0) + Number(win);
+      const playerIndex = players.findIndex(
+        (player) => player.player === playerInfo.player
+      );
+
+      if (playerIndex > -1) {
+        let playersCopy = [...players];
+        playersCopy.splice(playerIndex, 1, playerInfo);
+        setPlayers(playersCopy);
+      }
+
       updateDoc(playerDocRef, {
-        win: Number(playerInfo.data().win) + Number(win),
+        win: playerInfo.win,
+        decks: playerInfo.decks,
       });
 
-      let currentDecks = playerInfo.data().decks;
-
-      currentDecks[winningDeck] = (currentDecks[winningDeck] || 0) + 1;
-
-      await updateDoc(playerDocRef, { decks: currentDecks });
     } else {
-      const newPlayerRef = await addDoc(playersRef, {
+      let playerData = {
         player: playerName,
         decks: decks,
         win: Number(win),
-      });
+      };
+      const newPlayerRef = await addDoc(playersRef, playerData);
+      let playerCopy = [...players];
+      playerCopy.push(playerData);
+
+      setPlayers(playerCopy)
     }
 
     p.target.player.value = "";
     p.target.decks.value = "";
     p.target.win.value = "";
-
-    alert("Win added...");
   };
 
   return (
@@ -66,19 +82,19 @@ function Players() {
       <form onSubmit={(p) => addWin(p)}>
         <div className="fieldWrapper">
           <input name="player" id="playerName"></input>
-          <label className="playerNameLabel" for="playerName">
+          <label className="playerNameLabel" htmlFor="playerName">
             Player Name
           </label>
           <br></br>
 
           <input name="decks" id="decks"></input>
-          <label className="winningDeckLabel" for="decks">
+          <label className="winningDeckLabel" htmlFor="decks">
             Winning Deck
           </label>
           <br></br>
 
           <input name="win" id="win" type="number"></input>
-          <label className="addWinLabel" for="win">
+          <label className="addWinLabel" htmlFor="win">
             Add winning times
           </label>
           <br></br>
