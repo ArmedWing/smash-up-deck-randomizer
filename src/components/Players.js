@@ -1,5 +1,5 @@
 import { db } from "../config/firebase";
-import React from "react";
+import { React } from "react";
 import {
   addDoc,
   collection,
@@ -17,14 +17,8 @@ function Players() {
     const winningDeck = p.target.decks.value;
     const win = p.target.win.value;
 
-    const [deck1Val, deck2Val] = winningDeck.split(" ");
-
-    const deck1 = deck1Val;
-    const deck2 = deck2Val;
-
     const decks = {};
-    decks[deck1] = 0;
-    decks[deck2] = 0;
+    decks[winningDeck] = 1;
 
     const playersRef = collection(db, "players");
     const querySnapshot = await getDocs(playersRef);
@@ -47,11 +41,9 @@ function Players() {
         win: Number(playerInfo.data().win) + Number(win),
       });
 
-      const playerDocSnapshot = await getDoc(playerDocRef);
-      const currentDecks = playerDocSnapshot.data().decks || {};
+      let currentDecks = playerInfo.data().decks;
 
-      currentDecks[deck1] = (currentDecks[deck1] || 0) + 1;
-      currentDecks[deck2] = (currentDecks[deck2] || 0) + 1;
+      currentDecks[winningDeck] = (currentDecks[winningDeck] || 0) + 1;
 
       await updateDoc(playerDocRef, { decks: currentDecks });
     } else {
@@ -61,6 +53,10 @@ function Players() {
         win: Number(win),
       });
     }
+
+    p.target.player.value = "";
+    p.target.decks.value = "";
+    p.target.win.value = "";
 
     alert("Win added...");
   };

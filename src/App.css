@@ -111,3 +111,14 @@
   margin-bottom: 5px;
   border: 1px solid;
 }
+
+.player-name {
+  background-color: white;
+  border: 1px solid;
+  width: 130px;
+}
+
+.deck-info {
+  background-color: white;
+  border: 1px solid;
+}
