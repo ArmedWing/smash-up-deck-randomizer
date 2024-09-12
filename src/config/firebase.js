@@ -1,14 +1,14 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore'
+import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAQ2RhpSb40pcq11W4kBl7yNU7ud0nJTNc",
-    authDomain: "smash-up-randomizer.firebaseapp.com",
-    projectId: "smash-up-randomizer",
-    storageBucket: "smash-up-randomizer.appspot.com",
-    messagingSenderId: "490831800733",
-    appId: "1:490831800733:web:acd89e53cec4d4b80b6774"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: "smash-up-randomizer.firebaseapp.com",
+  projectId: "smash-up-randomizer",
+  storageBucket: "smash-up-randomizer.appspot.com",
+  messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_API_ID,
 };
 
 // Initialize Firebase
