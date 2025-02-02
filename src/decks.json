@@ -2,7 +2,8 @@
   "decks": [
     {
       "name": "Pirates",
-      "img": "https://i.imgur.com/IyiSSUj.png"
+      "img": "https://i.imgur.com/IyiSSUj.png",
+      "titan": "https://i.imgur.com/fnp3ClG.png"
     },
     {
       "name": "Aliens",
@@ -10,11 +11,13 @@
     },
     {
       "name": "Dinosaurs",
-      "img": "https://i.imgur.com/2sY7t82.png"
+      "img": "https://i.imgur.com/2sY7t82.png",
+      "titan": "https://i.imgur.com/xD3K9Z1.png"
     },
     {
       "name": "Wizards",
-      "img": "https://i.imgur.com/vUTKNDD.png"
+      "img": "https://i.imgur.com/vUTKNDD.png",
+      "titan": "https://i.imgur.com/2pTcMBT.png"
     },
     {
       "name": "Zombies",
@@ -22,15 +25,18 @@
     },
     {
       "name": "Bear Cavalry",
-      "img": "https://i.imgur.com/hFtTHs5.png"
+      "img": "https://i.imgur.com/hFtTHs5.png",
+      "titan": "https://i.imgur.com/FWYfhvy.png"
     },
     {
       "name": "Ghosts",
-      "img": "https://i.imgur.com/ZXV3qsQ.png"
+      "img": "https://i.imgur.com/ZXV3qsQ.png",
+      "titan": "https://i.imgur.com/4GXIduV.png"
     },
     {
       "name": "Killer Plants",
-      "img": "https://i.imgur.com/0yxzRqw.png"
+      "img": "https://i.imgur.com/0yxzRqw.png",
+      "titan": "https://i.imgur.com/4u7CMjO.png"
     },
     {
       "name": "Elder Things",
@@ -42,7 +48,8 @@
     },
     {
       "name": "Giant Ants",
-      "img": "https://i.imgur.com/zlZZTLU.png"
+      "img": "https://i.imgur.com/zlZZTLU.png",
+      "titan": "https://i.imgur.com/OwOD3Zz.png"
     },
     {
       "name": "Elves",
@@ -66,7 +73,8 @@
     },
     {
       "name": "Changerbots",
-      "img": "https://i.imgur.com/V3i0Iyi.png"
+      "img": "https://i.imgur.com/V3i0Iyi.png",
+      "titan": "https://i.imgur.com/46HUXPF.png"
     },
     {
       "name": "Teddy Bears",
@@ -78,11 +86,13 @@
     },
     {
       "name": "Innsmouth",
-      "img": "https://i.imgur.com/29s6ItU.png"
+      "img": "https://i.imgur.com/29s6ItU.png",
+      "titan": "https://i.imgur.com/JZrZsQz.png"
     },
     {
       "name": "Minions of Cthulhu",
-      "img": "https://i.imgur.com/4NAP5Vb.png"
+      "img": "https://i.imgur.com/4NAP5Vb.png",
+      "titan": "https://i.imgur.com/zoYqAdD.png"
     },
     {
       "name": "Princesses",
@@ -94,7 +104,8 @@
     },
     {
       "name": "Superheroes",
-      "img": "https://i.imgur.com/xEkz1Yt.png"
+      "img": "https://i.imgur.com/xEkz1Yt.png",
+      "titan": "https://i.imgur.com/e8nAvbY.png"
     },
     {
       "name": "Astroknights",
@@ -110,19 +121,23 @@
     },
     {
       "name": "Itty Critters",
-      "img": "https://i.imgur.com/n7IJDrR.png"
+      "img": "https://i.imgur.com/n7IJDrR.png",
+      "titan": "https://i.imgur.com/M2zjAk0.png"
     },
     {
       "name": "Kaiju",
-      "img": "https://i.imgur.com/z8TWSPE.png"
+      "img": "https://i.imgur.com/z8TWSPE.png",
+      "titan": "https://i.imgur.com/eBGe8Tn.png"
     },
     {
       "name": "Magical Girls",
-      "img": "https://i.imgur.com/K9TLXKI.png"
+      "img": "https://i.imgur.com/K9TLXKI.png",
+      "titan": "https://i.imgur.com/gyhbHrH.png"
     },
     {
       "name": "Mega Troopers",
-      "img": "https://i.imgur.com/gm2r7zh.png"
+      "img": "https://i.imgur.com/gm2r7zh.png",
+      "titan": "https://i.imgur.com/VovZF3v.png"
     },
     {
       "name": "Avengers",
@@ -182,27 +197,33 @@
     },
     {
       "name": "Super Spies",
-      "img": "https://i.imgur.com/KbdaGHq.png"
+      "img": "https://i.imgur.com/KbdaGHq.png",
+      "titan": "https://i.imgur.com/kbYQR9Y.png"
     },
     {
       "name": "Time Travelers",
-      "img": "https://i.imgur.com/2MV3BwL.png"
+      "img": "https://i.imgur.com/2MV3BwL.png",
+      "titan": "https://i.imgur.com/G8LMEw6.png"
     },
     {
       "name": "Mad Scientists",
-      "img": "https://i.imgur.com/mlp2OFz.png"
+      "img": "https://i.imgur.com/mlp2OFz.png",
+      "titan": "https://i.imgur.com/Hto5fAQ.png"
     },
     {
       "name": "Vampires",
-      "img": "https://i.imgur.com/hi4liLT.png"
+      "img": "https://i.imgur.com/hi4liLT.png",
+      "titan": "https://i.imgur.com/X0Rf36u.png"
     },
     {
       "name": "Werewolves",
-      "img": "https://i.imgur.com/MbJJkfx.png"
+      "img": "https://i.imgur.com/MbJJkfx.png",
+      "titan": "https://i.imgur.com/O8uQp6n.png"
     },
     {
       "name": "Fairies",
-      "img": "https://i.imgur.com/dAEGW6Y.png"
+      "img": "https://i.imgur.com/dAEGW6Y.png",
+      "titan": "https://i.imgur.com/xZBO7ce.png"
     },
     {
       "name": "Kitty Cats",
@@ -218,23 +239,28 @@
     },
     {
       "name": "Sharks",
-      "img": "https://i.imgur.com/xDzw03p.png"
+      "img": "https://i.imgur.com/xDzw03p.png",
+      "titan": "https://i.imgur.com/dzafau1.png"
     },
     {
       "name": "Tornados",
-      "img": "https://i.imgur.com/h7Cv2GS.png"
+      "img": "https://i.imgur.com/h7Cv2GS.png",
+      "titan": "https://i.imgur.com/YaIKWUc.png"
     },
     {
       "name": "Ignobles",
-      "img": "https://i.imgur.com/udc3gJu.png"
+      "img": "https://i.imgur.com/udc3gJu.png",
+      "titan": "https://i.imgur.com/WU8MNFr.png"
     },
     {
       "name": "Explorers",
-      "img": "https://i.imgur.com/KeiH25N.png"
+      "img": "https://i.imgur.com/KeiH25N.png",
+      "titan": "https://i.imgur.com/HdtbRVw.png"
     },
     {
       "name": "Grannies",
-      "img": "https://i.imgur.com/6ywzMEl.png"
+      "img": "https://i.imgur.com/6ywzMEl.png",
+      "titan": "https://i.imgur.com/nY4jPjZ.png"
     },
     {
       "name": "Dwarves",
@@ -270,11 +296,13 @@
     },
     {
       "name": "Ninjas",
-      "img": "https://i.imgur.com/MLc3MdF.png"
+      "img": "https://i.imgur.com/MLc3MdF.png",
+      "titan": "https://i.imgur.com/BP3t9X5.png"
     },
     {
       "name": "Tricksters",
-      "img": "https://i.imgur.com/ldKJAGP.png"
+      "img": "https://i.imgur.com/ldKJAGP.png",
+      "titan": "https://i.imgur.com/cW9YlJ1.png"
     },
     {
       "name": "Mermaids",
@@ -330,11 +358,13 @@
     },
     {
       "name": "Cowboys",
-      "img": "https://i.imgur.com/VLMKbAB.png"
+      "img": "https://i.imgur.com/VLMKbAB.png",
+      "titan": "https://i.imgur.com/cp1NR8v.png"
     },
     {
       "name": "Ancient Egyptians",
-      "img": "https://i.imgur.com/rNNOFTu.png"
+      "img": "https://i.imgur.com/rNNOFTu.png",
+      "titan": "https://i.imgur.com/iREScRn.png"
     },
     {
       "name": "Vikings",
@@ -374,7 +404,8 @@
     },
     {
       "name": "Kung Fu Fighters",
-      "img": "https://i.imgur.com/a0GbRlf.png"
+      "img": "https://i.imgur.com/a0GbRlf.png",
+      "titan": "https://i.imgur.com/zVCTJTD.png"
     }
   ]
 }

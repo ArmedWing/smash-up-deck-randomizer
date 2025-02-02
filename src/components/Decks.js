@@ -33,16 +33,36 @@ function AllDecks() {
         {randomDeck ? (
           <>
             <p className="deckName">{randomDeck.name}</p>
-            <img
-              className="deckContainer"
-              src={randomDeck.img}
-              style={{ maxWidth: "400px", maxHeight: "400px" }}
-              alt={randomDeck.name}
-            />
+            <div className="imageContainer">
+              <img
+                className="deckContainer"
+                src={randomDeck.img}
+                style={{
+                  maxWidth: "350px",
+                  maxHeight: "350px",
+                  minHeight: "350px",
+                }}
+                alt={randomDeck.name}
+              />
+              {randomDeck.titan ? (
+                <img
+                  className="deckContainer"
+                  src={randomDeck.titan}
+                  style={{
+                    maxWidth: "350px",
+                    maxHeight: "350px",
+                    minHeight: "350px",
+                  }}
+                  alt={randomDeck.name}
+                />
+              ) : (
+                <></>
+              )}
+            </div>
           </>
         ) : (
           <>
-            <p>No more decks in the pool.</p>
+            <p>No more decks in the pool...</p>
             <ResetDeckList resetDeckList={resetDeckList} />
           </>
         )}
